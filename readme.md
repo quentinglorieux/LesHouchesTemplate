@@ -4,7 +4,7 @@
 
 ### Clone the git repository
 
-git clone 
+`git clone https://github.com/quentinglorieux/LesHouchesTemplate.git`
 
 ### Install Hugo (optional)
 
