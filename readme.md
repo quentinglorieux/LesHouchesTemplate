@@ -1,19 +1,24 @@
 # How to use the Hugo - Les Houches template
 
 ## Installation
+### Pre-requisites
+- A github account
+- A Google account (to display the program)
+- A Netlify account (for hosting)
+- A Sheetdb account (for registration)
 
 ### Clone the git repository
 
 `git clone https://github.com/quentinglorieux/LesHouchesTemplate.git`
 
-### Install Hugo (optional)
+### Install Hugo (optional but recommended)
 
 If you want to run the website locally, you need to install Hugo.
 All infor are at [https://gohugo.io/installation/](https://gohugo.io/installation/)
 
-### Run it locally (optional)
+### Run it locally (optional but recommended)
 
-hugo serve
+`hugo serve` will run the website locally on `http://localhost:1313/`
 
 ## Edit the content
 
@@ -58,6 +63,8 @@ hugo serve
 - Create an account on Netlify and link it to your GitHub account.
 - Connect to Netlify and link your repository to it.
 - If needed: set the build command to `hugo` and the publish directory to `public/`
+![image](/themes/hugo-conference/assets/netlify.png)
+- Optional:  You could set your domain name in the settings of Netlify
 
 
 
@@ -77,15 +84,4 @@ hugo serve
     - Do it in OVH (or somewhere else) with a CNAME towards Netlify site adress
     - Go to Netlify Domain > Register the subdomain
     - Ask for a certificate 
-
-
-## Edit the template
-
-Most of the configuration can be found in the config.yml file.
-Edit this to access most of the parameters.
-
-
-
-## Run it locally
-hugo serve
 
