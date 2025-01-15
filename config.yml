@@ -1,0 +1,77 @@
+baseurl: "https://coldatoms-leshouches-2024.netlify.app/"
+title: "Les Houches School on"
+canonifyurls: true
+GoogleAnalytics: ""
+theme : 'hugo-conference'
+sheetdbEnpointURL: "https://sheetdb.io/api/v1/ly243907ewpl4"
+
+
+params:
+  # Conference info
+  Name: "Les Houches School on"
+  Description: "Description."
+  Subtitle: "Ecole Subtitle"
+  Date: "October 14, 2024 - October 25, 2024"
+  Arrival: "October 14th after 3PM"
+  Departure: "October 25th after Lunch"
+  # Price: "" # 
+  City: "Les Houches"
+  Country:  "France"
+  Address : "Les Houches School of Physics. 140 Chemin de la Côte. 74310 Les Houches "
+  Intro: "Les Houches pre-doctoral school on 'Cold atoms: quantum gases and quantum fluids of light' offers an in-depth exploration of quantum phenomena within quantum fluids systems. The first week is devoted to background lectures on the general aspects of ultracold atomic physics and quantum fluids. The rest of the school will school will tackle various systems from ultra-cold atomic gases to superfluid helium, and photonic systems, and explore phenomena such as Bose-Einstein condensation, superfluidity, quantum vortices and quantum turbulence… This interdisciplinary school will allow to study modern aspects of quantum mechanics (theory and experiments) and its applications, with a focus on emerging technologies such as quantum simulation and precision measurement."
+  Organizers: 
+    - Ecole "Atomes Froids" du GDR "Gaz Quantiques"
+    - Antoine BROWAEYS, Laboratoire Charles Fabry, CNRS, Institut d’Optique
+    - Quentin GLORIEUX, Laboratoire Kastler Brossel, CNRS, Sorbonne Université
+    - Mathilde HUGBART, Institut de Physique de Nice, CNRS
+  Registration: "REGISTRATION CLOSED"
+  Fees: "Fees : 858€ (including taxes)"
+
+
+  # Active sections on the website to deactivate comment out with '#'
+  # you can also change order here and it will reflect on page
+  Sections:
+    - about
+    - topics
+    - speakers
+    - schedule_partial
+    - sponsors
+    - location
+    - infos
+    - register
+    - contact
+  
+
+  # Titles which you can translate to other languages
+  Titles:
+    about: "About"
+    topics: "Topics"
+    location: "Location"
+    speakers: "Speakers"
+    schedule_partial: "Program"
+    sponsors: "Sponsors"
+    register: "Registration"
+    infos : "Infos"
+
+  # The Call To Action button at the header,
+  # If you don't want this, just remove the callToAction property.
+  CallToAction:
+    text: "Register now"
+    link: "/#register"
+
+
+  # List of Sponsors
+  Sponsors:
+    - name: "PASQuanS2"
+      logo: "/img/pasquans.jpg  "
+      url: "https://pasquans2.eu/"
+
+    - name: "GDR Quantum Gases"
+      logo: "/img/gdr_gq.png"
+      url: "https://gdr-gazquantiques.cnrs.fr/"
+
+    - name: "GDR Complex"
+      logo: "/img/gdr_complexe.jpg"
+      url: "https://gdrcomplexe2022.sciencesconf.org/"
+
+

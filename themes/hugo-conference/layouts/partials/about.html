@@ -1,0 +1,63 @@
+<h2>{{ .titles.about }}</h2>
+
+
+
+<p itemprop="description">{{ site.Params.Intro }}</p>
+
+<div class="flex-container">
+  <div class="about-div-left pr-10">
+    <p>
+      Welcome to the {{ site.Params.Name }}, a school on 
+      {{ site.Params.Description}}. From <strong> {{ site.Params.Date}}</strong>,
+      this school will be held in Les Houches, France.
+    </p>
+    <div class="imageabout">
+      <img
+        class="photo scroll-px-44 mx-auto"
+        src="../img/EPH_logo_h122.jpg"
+        alt="Logo"
+      />
+    </div>
+<div>
+    <div class="text-2xl font-bold "> Organizers</div>
+
+    <ul class="">
+      {{ range $organizer := site.Params.Organizers }}
+        <li class="text-lg" >
+         {{ . }}
+        </li>
+      {{ end }}
+      </ul>
+
+  </div>
+</div>
+  <div class="about-div-right imageabout">
+    <span class="">
+      <img
+        class="photo scroll-px-44"
+        src="../img/HOUCHES-panorama.jpg"
+        alt="Panorama"
+      />
+    </span>
+  </div>
+</div>
+
+<div class="mt-24 text-center text-red-800 text-2xl bg-red-300 rounded-lg shadow-md py-4 mx-24 mb-10">
+  <div>Arrival in LES HOUCHES : {{ site.Params.Arrival }}</div>
+  <div>Departure from LES HOUCHES: {{ site.Params.Departure }}</div>
+
+  
+</div>
+
+<style>
+  .flex-container {
+    display: flex;
+  }
+
+  .about-div-left {
+    flex: 2;
+  }
+  .about-div-right {
+    flex: 3;
+  }
+</style>

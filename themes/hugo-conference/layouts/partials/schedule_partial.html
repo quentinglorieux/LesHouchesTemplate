@@ -1,0 +1,36 @@
+
+
+<h2 class="section-title">{{ .titles.program }}</h2>
+
+
+<!-- Adding the iframe -->
+<div id="schedule-container">
+  {{ with site.Data.schedule.url }}
+    <iframe id="schedule-iframe" width="1052px" height="1330px" frameborder="0" src="{{ . }}"></iframe>
+  {{ else }}
+    <p>Schedule data is not available. Please check the configuration.</p>
+  {{ end }}
+</div>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Select the footer div and hide it
+      var footer = document.getElementById('footer');
+      if (footer) {
+        footer.style.display = 'none';
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var iframe = document.getElementById('schedule-iframe');
+      var container = document.getElementById('schedule-container');
+
+      function resizeIframe() {
+        iframe.style.width = container.offsetWidth * 1.26 + 'px'; // Adjust the ratio as needed
+      }
+
+      window.addEventListener('resize', resizeIframe);
+      resizeIframe(); // Initial call to set the size
+    });
+  </script>

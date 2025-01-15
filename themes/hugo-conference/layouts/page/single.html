@@ -1,0 +1,75 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/Event">
+<head>
+  <title itemprop="name">{{ .Site.Params.Name }}</title>
+
+  <meta charset="utf-8">
+  <meta name="author" content="{{ .Site.Params.Name }}" />
+  <meta name="description" content="{{ .Site.Params.Description }}">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  {{ hugo.Generator }}
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
+
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+
+  <!-- <link rel="stylesheet" href="https://rsms.me/inter/inter.css"> -->
+  {{ $style := resources.Get "style.css" }}    
+  <link rel="stylesheet" href="{{ $style.Permalink }}"> 
+
+  <link rel="stylesheet" type="text/css" href="/css/mainX.css">
+
+
+</head>
+<body>
+  <div class="global">
+
+    {{/*  {{ partial "nav.html" . }}  */}}
+    {{/*  {{ partial "header.html" .Site.Params }}  */}}
+
+    <header class="header" id="homefull" name="LesHouches2">
+        <div class="wrapper">
+          <h1 class="logo-name">
+            <a class="logo-link" href="#" title="{{ .Site.Params.name }}" itemprop="name">Your registration has been recorded. </a>
+          </h1>
+          <h2 class="description">{{ .Site.Params.name }} <br> {{ .Site.Params.description }}</h2>
+          <h2 class="tagline"> Thank you !  </h2>
+      
+            <h4 class="description">We will announce selected applicants mid-July 2024. </h4>
+
+      
+            
+            <div class="call-action-area">
+             
+          
+                {{ with .Site.Params.calltoaction }}
+                  <a href="/" class="call-action-link mt-6"  title="Home">Back to the conference website</a>
+                {{ end }}
+              </div>
+
+        </div>
+      </header>
+      
+      <hr>
+
+      
+
+    {{/*  <div class="content" id="content">
+      <div class="wrapper">
+        
+
+        <footer class="footer mt-24">
+          <div class="text-slate-300">Made with ♥ by Quentin Glorieux. © {{ .Site.Title }} </div>
+        </footer>
+      </div>
+    </div>  */}}
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/jquery.js"><\/script>')</script>
+  <script src="/js/main.js"></script>
+  {{/*  {{ template "_internal/google_analytics_async.html" . }}  */}}
+</body>
+</html>

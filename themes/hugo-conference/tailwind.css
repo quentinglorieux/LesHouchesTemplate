@@ -1,0 +1,28 @@
+
+@tailwind components;
+@tailwind utilities;
+
+
+@tailwind base;
+@layer base {
+  h1 {
+    font-size: 100%;
+  line-height: 1em;
+  font-weight: 600;
+  color: #2b2b2b;
+  }
+  h2,
+  h3,
+  h4 {
+    font-size: 5em;
+    font-weight: normal;
+    margin-bottom: 0.4em;
+    letter-spacing: -0.02em;
+  }
+  p{
+    margin-bottom: 1.4em;
+  }
+  html{
+    line-height: 1.5;
+  }
+}

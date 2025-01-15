@@ -1,0 +1,49 @@
+- name: "Speaker 1"
+  photo: "/img/speaker.jpg"
+  bio: "Tba"
+  lab: "IQOQI Innsbruck"
+
+- name: "Speaker"
+  photo: "/img/speaker.jpg"
+  bio: "Tba"
+  lab: "EPFL"
+
+- name: "Speaker"
+  photo: "/img/speaker.jpg"
+  bio: "Tba"
+  lab: "INO-CNR Trento"
+
+- name: "Speaker"
+  photo: "/img/speaker.jpg"
+  bio: "Tba"
+  lab: "LENS, Università di Firenze"
+
+- name: "Speaker"
+  photo: "/img/speaker.jpg"
+  bio: "Tba"
+  lab: "Université de Genève"
+
+- name: "Speaker"
+  photo: "/img/speaker.jpg"
+  bio: "Tba"
+  lab: "Weizmann Institute"
+
+- name: "Speaker"
+  photo: "/img/speaker.jpg"
+  bio: "Tba"
+  lab: "JILA, USA"
+
+- name: "Speaker"
+  photo: "/img/speaker.jpg"
+  bio: "Tba"
+  lab: "C2N Palaiseau"
+
+- name: "Speaker"
+  photo: "/img/speaker.jpg"
+  bio: "Tba"
+  lab: "MPQ Munich"
+
+
+
+
+
