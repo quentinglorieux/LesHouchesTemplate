@@ -50,7 +50,7 @@ All infor are at [https://gohugo.io/installation/](https://gohugo.io/installatio
 
 ## Setup the registration form
 
-- Create an account on `sheetdb.io` using your google account
+- Create a free account on `sheetdb.io` using your google account
 - Create a new spreadsheet from JSON using `https://lab.quantumoptics.fr/assets/json/houches.json` ![image](/themes/hugo-conference/assets/json.png)
 - Copy the endpoint URL given by sheetdb.io and paste it in the `config.yml` file : `sheetdbEnpointURL:`
 - All registrations will be sent to the google sheet.
