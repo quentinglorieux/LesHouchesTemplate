@@ -39,7 +39,6 @@ All infor are at [https://gohugo.io/installation/](https://gohugo.io/installatio
 - if you have a problem of size you could change it in `layouts/partials/schedule_partial.html`
 
 
-
 ### Data and images
 
 - Images are stored in `static/img/`
@@ -66,7 +65,9 @@ All infor are at [https://gohugo.io/installation/](https://gohugo.io/installatio
 ![image](/themes/hugo-conference/assets/netlify.png)
 - Optional:  You could set your domain name in the settings of Netlify
 
-
+## Publish changes
+- Push your changes to GitHub
+- Netlify will automatically deploy the changes
 
 
 # For Developpers
